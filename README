@@ -1,0 +1,19 @@
+Duplocator is a simple command line Java tool to find duplicate files on your computer.
+
+To run this, first download and extract the source files to a location of your choice. 
+After going inside the directory, do the following:
+
+$ javac duplocator/*.java
+$ java duplocator/Main 
+
+First, it recurses the given directory and builds a list of files.
+Then, it looks for files which have the same size.
+It then reads those identically sized files, comparing them byte by byte until it finds a byte that doesn't match, or it reaches the end of the file.
+
+It does not use any kind of hashing or CRC system, as that would require reading the entire file, which would be less efficient if a byte near the beginning was different.
+
+The app outputs its errors to stderr, and its results to stdout as it goes.
+
+Send any suggestions/comments to my github username at gmail.com
+
+TODO: Compare timing between MD5 and Byte-by-Byte checking.
