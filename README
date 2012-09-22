@@ -15,5 +15,3 @@ It does not use any kind of hashing or CRC system, as that would require reading
 The app outputs its errors to stderr, and its results to stdout as it goes.
 
 Send any suggestions/comments to my github username at gmail.com
-
-TODO: Compare timing between MD5 and Byte-by-Byte checking.
